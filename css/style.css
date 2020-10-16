@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5,
 }
 .title{
   color: #fff;
-  margin: 0 0px 14px -73px;
+  margin: 0 -41px 14px -85px;
   font-size: x-large;
 }
 .sticky-wrapper.is-sticky .title{
