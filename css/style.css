@@ -1,6 +1,10 @@
   /* Base */
+   /* has to be scroll, not auto */
+
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden!important;
+  width: auto!important;
+ }
 
 body {
   line-height: 1.7;
@@ -1119,3 +1123,12 @@ h1, h2, h3, h4, h5,
 .make-responsive-image{
 
 }
+/* 1792x828px at 326ppi */
+@media only screen
+    and (device-width: 414px)
+    and (device-height: 896px)
+    and (-webkit-device-pixel-ratio: 2) {
+      .title{
+        margin:
+      }
+     }
