@@ -51,13 +51,13 @@ h1, h2, h3, h4, h5,
 }
 .fix-the-faqs{
   background: none;
-    border: 1px solid #ff0752;
-    color: #ff0752;
+    border: 1px solid green;
+    color: green;
     letter-spacing: 0.4em;
     line-height: 2em;
 }
 .fix-the-faqs:hover{
-    background-color: #ff0752;
+    background-color: green;
     border: 1px solid #fff;
     color: #fff;
     letter-spacing: 0.4em;
@@ -84,6 +84,9 @@ h1, h2, h3, h4, h5,
 }
 .h-500px{
   height:500px;
+}
+.rgba-green-slight{
+  background-color: rgba(76, 175, 80, 0.1);
 }
 .gradient-text {
   /* Fallback: Set a background color. */
@@ -187,9 +190,13 @@ h1, h2, h3, h4, h5,
     border: 1px solid #17a2b8;
     padding: 5px;
 }
-.confetti-bg{
-  background-image: url("../images/confetti-bg.png");
-  background-size:cover;
+.sms-bg{
+  background-image: url("../images/web-to-sms.png");
+  background-size: cover;
+
+}
+.larger{
+  font-size:larger;
 }
 .large-text{
   font-size: x-large;
@@ -497,7 +504,8 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   width: 100%;
-  background-color: rgba(0,0,0,0.5)}
+  /* background-color: rgba(0,0,0,0.5) */
+}
   .site-navbar .container-fluid {
     padding-left: 7rem;
     padding-right: 7rem; }
@@ -1123,12 +1131,9 @@ h1, h2, h3, h4, h5,
 .make-responsive-image{
 
 }
-/* 1792x828px at 326ppi */
-@media only screen
-    and (device-width: 414px)
-    and (device-height: 896px)
-    and (-webkit-device-pixel-ratio: 2) {
-      .title{
-        margin:
-      }
-     }
+@media screen and (max-width: 375px) {
+  .position-logo-left-of-title {
+    width: 38%;
+    float:left;
+  }
+}

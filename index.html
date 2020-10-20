@@ -5,7 +5,7 @@
   <title>Full Stack Web Developers</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Website Design and Development Agency">
+  <meta name="description" content="Website Design and Development">
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -161,7 +161,6 @@
                <p class="gradient-text-two large-text">Register a domain name and get <span class="font-larger">free</span> hosting for <span class="font-larger">static websites</span>.</p>
              </div>
            </div>
-
            <div class="package-two col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
              <div>
                <img src="https://img.icons8.com/officel/80/000000/web-design.png"/>
@@ -169,7 +168,6 @@
                <p class="sunny-morning-gradient-text text-center large-text">We create <span class="font-larger">beautiful</span> websites for your <span class="font-larger">brand</span>.</p>
              </div>
            </div>
-
            <div class="package-two col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
              <div>
                <img src="https://img.icons8.com/doodle/80/000000/star-logo.png"/>
@@ -177,58 +175,76 @@
                <p class="morpheus-den-gradient-text large-text">We <span class="font-larger">create</span> business <span class="font-larger">logo's</span> to promote brand <span class="font-larger">recognition</span>.</p>
              </div>
            </div>
-
            <div class="package-two col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
              <div>
                <img src="https://img.icons8.com/dusk/80/000000/google-forms.png"/>
-               <h5 class="text-danger">WEB FORMS TO EMAIL</h5>
-               <p class="aqua-gradient-text text-center large-text">Webforms go directly from your <span class="font-larger">webpage</span> to your <span class="font-larger">email</span>.</p>
+               <h5 class="text-danger">FORMS TO SMS/EMAIL</h5>
+               <p class="aqua-gradient-text text-center large-text">Webpage form submission <span class="font-larger"></span> to your <span class="font-larger">text message or email</span>.</p>
              </div>
            </div>
-
          </div>
          <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
            <div class="col-md-8">
-
            </div>
          </div>
-
        </div>
-<div class="" id="get-started">
-       <!-- FAQ Boxes Begin -->
-       <br><br><br>
-<div id="accordion" class="text-white margin-bottom-88px">
- <div class="card party-bg make-faq-card-transparent">
-   <div class="card-header" id="headingOne">
-     <h5 class="mb-0 text-center">
-       <button class="btn fix-the-faqs" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-         Click to Get Started
-       </button>
-     </h5>
-   </div>
-   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-     <div class="card-body">
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVAkb6y9MoZYS-HGPL01CcD1Jx_5NCPRXAiEV_2hHWElL4BA/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
      </div>
-   </div>
- </div>
- <!-- <div class="card make-faq-card-transparent">
-   <div class="card-header list-group" id="headingTwo">
-     <h5 class="mb-0">
-       <button class="btn fix-the-faqs collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         What does the basic life support course teach?
-       </button>
-     </h5>
-   </div>
- </div> -->
-</div>
-<!-- FAQ Boxes End -->
-</div>
-     </div>
-
     <!-- Our Process Ends -->
+    <!-- Send Message Begins -->
+    <div class="site-section sms-bg" id="send-message">
+    <div class="container" id="get-started">
+      <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
+        <div class="col-md-12 mb-3 mb-lg-0">
+          <!-- https://zapier.com/shared/c76fb0a98dbcb4a3d6a481384b5d4b5d7e1b2b37 Link to Form Confirmation  -->
+     <!-- Form One Form 1 -->
+            <form name="submit-to-google-sheet" id="form-one" class="first-form" method="post" data-aos="fade">
+              <div class="row justify-content-center text-center">
+                <div class="col-md-6 mb-3 mb-lg-0">
+                  <input type="text" class="form-control bottom-border-only" placeholder="Name" name="name">
+                </div>
+              </div>
+              <div class="row justify-content-center text-center important-from-group">
+                <div class="col-md-6 mb-3 mb-lg-0">
+                  <input type="email" class="form-control bottom-border-only" placeholder="Email" name="email">
+                </div>
+              </div>
+              <div class="row justify-content-center text-center important-from-group">
+                <div class="col-md-6 mb-3 mb-lg-0">
+                  <input type="text" class="form-control bottom-border-only"placeholder="Phone Number" name="phone">
+                </div>
+              </div>
+              <div class="form-group justify-content-center text-center row important-from-group">
+                <div class="col-md-2">
+                  <input name="submit" type="submit" class="btn fix-the-faqs larger py-3 px-5 btn-block text-left" value="Send">
+                </div>
+              </div>
+            </form>
+            <!--Removed php: Convert to a php website by uncommenting php scripts and setting up the phpmyadmin/mysql database to match exact table names and variable names -->
+            <!--<?php
+              if(isset($_SESSION['error-msg'])) {
+                echo "<div id = 'error-msg'>".$_SESSION['error-msg']."</div>";
+                unset($_SESSION['error-msg']);
+              }-->
+              <!-- This google apps script sends the form data to the google spreadsheet [replace with FSWD spreadsheet]. The spreadsheet then uses third party app to send sms triggered by a new row entry. Solution: We cut costs of hosting php/server/database *for only form submissions currently* Example: Next, alternate query to a database/spreadsheet -->
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxx93TPJjWoPFwfoDPtT18rUTX8OfwHaoup-TWA_emerS-5_3M/exec'
+                const form = document.forms['submit-to-google-sheet']
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                document.forms['form-one'].reset()
+                })
+            </script>
+    <!-- Form One Form 1 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Send Message Ends -->
     <!--Services Begins-->
-        <!-- <div class="site-section temporary-bg" id="services-section">
+        <!-- <div class="site-section" id="services-section">
           <div class="container">
             <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
               <div class="col-md-8 section-heading">
@@ -270,7 +286,7 @@
         </div> -->
     <!--Services Ends-->
 <!--Portfolio section begins-->
-    <div class="site-section confetti-bg" id="portfolio">
+    <div class="site-section rgba-green-slight" id="portfolio">
       <div class="container">
         <div class="row justify-content-center text-center mb-5" data-aos="fade-left">
           <div class="col-md-8 section-heading">
