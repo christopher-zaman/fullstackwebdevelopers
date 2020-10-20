@@ -1131,8 +1131,12 @@ h1, h2, h3, h4, h5,
 .make-responsive-image{
 
 }
-@media screen and (max-width: 1024px) {
-  .title {
-    margin: 0 -41px 14px -85px;
-  }
-}
+
+@media only screen
+    and (device-width: 414px)
+    and (device-height: 896px)
+    and (-webkit-device-pixel-ratio: 2) {
+      .title {
+        margin: 0 -41px 14px -85px;
+      }
+     }
