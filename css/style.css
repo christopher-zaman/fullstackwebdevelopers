@@ -1167,7 +1167,9 @@ font-size: smaller;
     display:none;
     /* margin: 0px 0px 17px -17px; */
   }
-
+  .email-device{
+  display:none;
+  }
   }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
