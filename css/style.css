@@ -1132,7 +1132,7 @@ h1, h2, h3, h4, h5,
 
 }
 @media screen and (max-width: 1024px) {
-  .position-logo-left-of-title {
+  .title {
     margin: 0 -41px 14px -85px;
   }
 }
