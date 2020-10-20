@@ -1131,9 +1131,8 @@ h1, h2, h3, h4, h5,
 .make-responsive-image{
 
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .position-logo-left-of-title {
-    width: 38%;
-    float:left;
+    margin: 0 -41px 14px -85px;
   }
 }
