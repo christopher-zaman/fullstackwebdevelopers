@@ -1157,6 +1157,9 @@ h1, h2, h3, h4, h5,
 .email-device{
 font-size: smaller;
 }
+.show-on-mobile{
+  display: none;
+}
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
   .title{
@@ -1169,6 +1172,9 @@ font-size: smaller;
   }
   .email-device{
   display:none;
+  }
+  .show-on-mobile{
+    display: block;
   }
   }
 /* Extra small devices (phones, 600px and down) */
@@ -1186,6 +1192,9 @@ font-size: smaller;
   }
   .email-show-device
   {
+    display: block;
+  }
+  .show-on-mobile{
     display: block;
   }
 }
