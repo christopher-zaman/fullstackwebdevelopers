@@ -197,20 +197,21 @@
         <div class="col-md-12 mb-3 mb-lg-0">
           <!-- https://zapier.com/shared/c76fb0a98dbcb4a3d6a481384b5d4b5d7e1b2b37 Link to Form Confirmation  -->
      <!-- Form One Form 1 -->
+     <h2 class="google-font-julius-sans-one" data-aos="fade-up" data-aos-delay="100">Send us a text through this form</h2>
             <form name="submit-to-google-sheet" id="form-one" class="first-form" method="post" data-aos="fade">
               <div class="row justify-content-center text-center">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control bottom-border-only" placeholder="Name" name="name">
+                  <input type="text" class="form-control bottom-border-only form-styles" placeholder="Name" name="name">
                 </div>
               </div>
               <div class="row justify-content-center text-center important-from-group">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="email" class="form-control bottom-border-only" placeholder="Email" name="email">
+                  <input type="email" class="form-control bottom-border-only form-styles" placeholder="Email" name="email">
                 </div>
               </div>
               <div class="row justify-content-center text-center important-from-group">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control bottom-border-only"placeholder="Phone Number" name="phone">
+                  <input type="text" class="form-control bottom-border-only form-styles"placeholder="Phone Number" name="phone">
                 </div>
               </div>
               <div class="form-group justify-content-center text-center row important-from-group">
@@ -347,25 +348,50 @@
             </ul>
           </div>
           <div class="col-md-3 ml-auto">
-            <h4 class="text-white raleway">Software</h4>
+            <!-- <h4 class="text-white raleway">Software</h4>
             <ul class="list-unstyled footer-links">
               <li><a href="https://github.com/christopher-zaman?tab=repositories&q=&type=&language=c%2B%2B" target="_blank" class="purple">C++</a></li>
               <li><a href="https://github.com/christopher-zaman?tab=repositories&q=&type=&language=python" target="_blank" class="purple">Python</a></li>
               <li><a href="https://github.com/christopher-zaman?tab=repositories&q=&type=&language=lua" target="_blank" class="purple">Lua</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
+            </ul> -->
             <h4 class="text-white raleway">Sample Websites</h4>
             <ul class="list-unstyled footer-links">
               <li><a href="http://ultimatehealthdpc.com/" target="_blank" class="purple">Nurse</a></li>
               <li><a href="http://www.mrfixer.nyc/" target="_blank" class="purple">Handy Man</a></li>
               <li><a href="https://kmgprep.com/index.html" target="_blank" class="purple">Health Instructors</a></li>
             </ul>
+
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-white raleway">More Websites</h4>
+            <ul class="list-unstyled footer-links">
+              <li><a href="http://101cafeonline.com/" target="_blank" class="purple">Cafe</a></li>
+              <li><a href="https://www.4celp.com/" target="_blank" class="purple">Tutoring</a></li>
+              <li><a href="http://www.ayaaninstitute.org/" target="_blank" class="purple">Driving School</a></li>
+            </ul>
+            <form name="submit-third-form-to-google-sheet" id="third-form" method="post">
+              <div class="d-flex mb-5">
+                <input name="email" type="email" class="form-control rounded-0" placeholder="Enter Your Email">
+                <input name="submitEmail" type="submit" class="btn btn-outline-warning rounded-0" value="Get Info">
+              </div>
+            </form>
+            <script>
+              const scriptURL3 = 'https://script.google.com/macros/s/AKfycbzCoE-yisEfgEttaUuIJlz3WIYYno615BZhWotptwxppuyh44s2/exec'
+              const form3 = document.forms['submit-third-form-to-google-sheet']
+
+              form3.addEventListener('submit', c => {
+                c.preventDefault()
+                fetch(scriptURL3, { method: 'POST', body: new FormData(form3)})
+                  .then(response => console.log('Success!', response))
+                  .catch(error => console.error('Error!', error.message))
+              document.forms['third-form'].reset()
+              })
+            </script>
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
-            <div class=" pt-5">
+            <div class="pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
