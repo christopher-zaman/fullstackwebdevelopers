@@ -226,7 +226,28 @@ h1, h2, h3, h4, h5,
 
 .color-white-opacity-5 {
   color: rgba(255, 255, 255, 0.5); }
+/* input colors */
+.form-control:hover, .form-control:active, .form-control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    input[type="text"].form-control::-webkit-input-placeholder {
+      color: #efefef;
+    }
+  }
 
+    input[type="text"].form-control::-webkit-input-placeholder {
+      color: orange;
+    }
+    input[type="phone"].form-control::-webkit-input-placeholder {
+      color: orange;
+    }
+    input[type="email"].form-control::-webkit-input-placeholder {
+      color: orange;
+    }
+    input[name="message"].form-control::-webkit-input-placeholder {
+      color: orange;
+    }
+/* input colors */
 .site-wrap:before {
   display: none;
   -webkit-transition: .3s all ease-in-out;
