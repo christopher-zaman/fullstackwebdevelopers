@@ -1154,6 +1154,9 @@ h1, h2, h3, h4, h5,
 .make-responsive-image{
 
 }
+.email-device{
+font-size: smaller;
+}
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
   .title{
     display:none;
