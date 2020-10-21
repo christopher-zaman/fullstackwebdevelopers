@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5,
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
 } */
+.w-70-m-auto{
+  max-width:70%;
+  margin:auto;
+}
 .footer-links li > a:hover{
   color: #7cd6b1;
 }
@@ -204,8 +208,10 @@ h1, h2, h3, h4, h5,
 .sms-bg{
   background-image: url("../images/web-to-sms.png");
   background-size: cover;
-
 }
+/*  */
+
+/*  */
 .larger{
   font-size:larger;
 }
