@@ -51,6 +51,14 @@ h1, h2, h3, h4, h5,
   background-image: url("../images/party.jpg");
   background-size: cover;
 }
+.social-media-links{
+    list-style-type: none;
+    float: left;
+    display: flex;
+}
+.social-media-spacing{
+  padding:20px;
+}
 .fix-the-faqs{
   background: none;
     border: 1px solid #a6ef91;
