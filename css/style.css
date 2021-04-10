@@ -842,7 +842,7 @@ h1, h2, h3, h4, h5,
   .sticky-wrapper.is-sticky .site-navbar {
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255,255,255,0.5); }
+    background-color: rgba(255,255,255,1); }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle > span:before {
       color: #000 !important; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
@@ -1188,11 +1188,11 @@ font-size: smaller;
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
   .title{
-    display:none;
+
     /* margin: 0 -86px; */
   }
   .position-logo-left-of-title{
-    display:none;
+    
     /* margin: 0px 0px 17px -17px; */
   }
   .email-device{
@@ -1205,11 +1205,11 @@ font-size: smaller;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.title{
-		display:none;
+		
     /* margin: 0 -86px; */
 	}
 	.position-logo-left-of-title{
-    display:none;
+    
     /* margin: 0px 0px 17px -17px; */
   }
   .email-device{
