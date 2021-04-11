@@ -59,18 +59,27 @@ h1, h2, h3, h4, h5,
 .social-media-spacing{
   padding:20px;
 }
-.fix-the-faqs{
-  background: none;
-    border: 1px solid #a6ef91;
-    color: green;
-    letter-spacing: 0.4em;
+.alice-blue{
+  background-color: #f0f8ff;
 }
-.fix-the-faqs:hover{
+.floral-white{
+  background-color: #fffaf0;
+}
+.btn-outline-warning:hover {
+    color: #ffffff;
+    background-color: #f89d13;
+    border-color: #f89d13;
+    font-size: 0.5em;
+}
+.send-button{
+  background: none;
+  border: 1px solid #a6ef91;
+  font-size: 1.5em !important;
+  font-weight: 100 !important;
+}
+.send-button:hover{
     background-color: #a6ef91;
-    border: 1px solid #fff;
     color: #fff;
-    letter-spacing: 0.4em;
-    line-height: 2em;
 }
 /* .shadow {
    -moz-box-shadow:    inset 0 0 10px #000000;
@@ -260,16 +269,28 @@ h1, h2, h3, h4, h5,
   }
 
     input[type="text"].form-control::-webkit-input-placeholder {
-      color: orange;
+      color: rgb(202, 131, 0);
+      font-size: 1.5em;
+      letter-spacing: 2px;
     }
     input[type="phone"].form-control::-webkit-input-placeholder {
-      color: orange;
+      color: rgb(202, 131, 0);
+      font-size: 1.5em;
+      letter-spacing: 2px;
     }
     input[type="email"].form-control::-webkit-input-placeholder {
-      color: orange;
+      color: rgb(202, 131, 0);
+      font-size: 1.5em;
+      letter-spacing: 2px;
     }
     textarea[name="message"].form-control::-webkit-input-placeholder {
-      color: orange;
+      color: rgb(202, 131, 0);
+      font-size: 1.5em;
+      letter-spacing: 2px;
+    }
+
+    input:-internal-autofill-selected{
+      background-color: #000;
     }
 /* input colors */
 .site-wrap:before {
@@ -1176,6 +1197,9 @@ h1, h2, h3, h4, h5,
 
 .footer-section {
   padding-top: 12rem !important; }
+.bg-info-trans{
+  background-color: rgb(24,162,184);
+}
 .make-responsive-image{
 
 }
