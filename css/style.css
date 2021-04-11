@@ -12,7 +12,10 @@ body {
   line-height: 1.7;
   font-weight: 300;
   font-size: 1.1rem;
-  color: #989898; }
+  color: #989898;
+  overflow-x: hidden!important;
+  width: auto!important;
+ }
 
 ::-moz-selection {
   background: #000;
@@ -561,11 +564,7 @@ h1, h2, h3, h4, h5,
     width: 100%; }
 
 /* Navbar */
-.site-logo {
-  position: relative;
-  font-weight: 900;
-  font-size: 1.3rem;
-  text-transform: uppercase; }
+
   .site-logo a {
     color: #fff; }
     .site-logo a span {
@@ -1214,6 +1213,9 @@ font-size: smaller;
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
+  .site-logo{
+    max-width: 80%;
+  }
   .title{
 
     /* margin: 0 -86px; */
