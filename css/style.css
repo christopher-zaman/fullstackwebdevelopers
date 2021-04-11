@@ -1215,20 +1215,9 @@ font-size: smaller;
   display: none;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
-  .site-logo{
-    max-width: 80%;
-  }
-  .title{
-
-    /* margin: 0 -86px; */
-  }
-  .position-logo-left-of-title{
-    
-    /* margin: 0px 0px 17px -17px; */
-  }
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {ß
   .email-device{
-  display:none;
+    display:none;
   }
   .show-on-mobile{
     display: block;
@@ -1237,13 +1226,8 @@ font-size: smaller;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.title{
-		
-    /* margin: 0 -86px; */
+		font-size: .9em;
 	}
-	.position-logo-left-of-title{
-    
-    /* margin: 0px 0px 17px -17px; */
-  }
   .email-device{
   display:none;
   }
