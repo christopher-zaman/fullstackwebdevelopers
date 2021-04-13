@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5,
 .alice-blue{
   background-color: #f0f8ff;
 }
+.remove-bullets-from-ul {
+  list-style-type: none;
+}
 .mint-cream{
   background-color: #f5fffa;
 }
@@ -76,6 +79,19 @@ h1, h2, h3, h4, h5,
 }
 .floral-white{
   background-color: #fffaf0;
+}
+.seo-bg{
+  background-color: #fff;
+  color: #000080;
+}
+.hide-on-big-screens{
+  display:none;
+}
+.get-started-expand{
+
+}
+.footer-bg{
+  background-color: #000080;
 }
 .btn-outline-warning:hover {
     color: #ffffff;
@@ -608,7 +624,7 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #fff; }
+          color: #000080; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -883,7 +899,15 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         text-decoration: none !important; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-          color: #c83660; }
+          color: #000; }
+          .sticky-wrapper.is-sticky .site-navbar .site-menu .collapse > li > a{
+            color:#000;
+          }
+
+          .custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid
+          {
+            border-color:#0000f0;
+          }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
           background: #c83660; }
   .sticky-wrapper .shrink {
@@ -1221,7 +1245,7 @@ font-size: smaller;
   .show-on-mobile{
     display: block;
   }
-  
+
   }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1241,5 +1265,5 @@ font-size: smaller;
   .show-on-mobile{
     display: block;
   }
-  
+
 }
