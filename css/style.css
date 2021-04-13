@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5,
   height:500px;
 }
 .transparent-black-bg{
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 .rgba-green-slight{
   background-color: rgba(76, 175, 80, 0.1);
