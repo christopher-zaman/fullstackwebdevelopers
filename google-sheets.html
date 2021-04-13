@@ -156,7 +156,7 @@
       <!-- FAQ Boxes Begin -->
 
         <h2 class="heading mb-3 raleway" data-aos="fade-left"><strong>Get Started</strong></h2>
-                <form action="#" class="was-validated">
+                <form name="submit-to-google-sheet" id="form-one" class="was-validated">
                   <div class="form-group">
                     <label for="uname">Name</label>
                     <input type="text" class="form-control" id="uname" placeholder="Name" name="uname" required>
@@ -179,6 +179,24 @@
 
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
+                <!--
+                  1. This google apps script below sends the form data to the google spreadsheet.
+                  **see instructions on github.com/christopher-zaman/Instructions-for-html-form-to-google-sheet**
+                  2. The spreadsheet then uses zapier to send sms/text triggered by a new row entry in the given spreadsheet.
+                     Link to this form confirmation: https://zapier.com/shared/c76fb0a98dbcb4a3d6a481384b5d4b5d7e1b2b37
+                -->
+                <script>
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycbxx93TPJjWoPFwfoDPtT18rUTX8OfwHaoup-TWA_emerS-5_3M/exec'
+                  const form = document.forms['submit-to-google-sheet']
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then(response => console.log('Success!', response))
+                      .catch(error => console.error('Error!', error.message))
+                  document.forms['form-one'].reset()
+                  })
+              </script>
 
 
       <!-- FAQ Boxes Begin -->
