@@ -57,6 +57,9 @@ h1, h2, h3, h4, h5,
 .go-left{
   float:left;
 }
+.font-size-larger{
+  font-size: xxx-large !important;
+}
 .social-media-links{
     list-style-type: none;
     float: left;
@@ -146,6 +149,9 @@ h1, h2, h3, h4, h5,
 }
 .h-500px{
   height:500px;
+}
+.transparent-black-bg{
+  background-color: rgba(0,0,0, 0.5);
 }
 .rgba-green-slight{
   background-color: rgba(76, 175, 80, 0.1);

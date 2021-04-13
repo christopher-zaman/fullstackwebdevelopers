@@ -58,20 +58,23 @@
             <div class="ml-auto">
               <nav class="site-navigation position-relative text-right" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block remove-bullets-from-ul">
+
                           <nav class="navbar navbar-expand-lg">
                             <div class="collapse navbar-collapse float-it-to-the-left" id="">
-                          			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  More Info  </a>
-                          		    <ul class="js-clone-nav">
-                          			  <a class="dropdown-item" href="search-engine-optimization.html"> SEO </a>
-                          			  <a class="dropdown-item" href="ads.html"> Ads </a>
-                          			  <a class="dropdown-item" href="search-engine-results-page.html"> SERP </a>
-                                  <a class="dropdown-item" href="getting-started-with-google-apps.html" class="purple">Using Google Apps</a>
-                                  <a class="dropdown-item" href="google-analytics-tracker.html" class="purple">Analytics Tracker</a>
-                                  <a class="dropdown-item" href="google-sheets.html" class="purple">Spreadsheets</a>
-                          		    </ul>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Menu  </a>
+                                  <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="search-engine-optimization.html"> SEO </a></li>
+                                  <li><a class="dropdown-item" href="ads.html"> Ads </a></li>
+                                  <li><a class="dropdown-item" href="search-engine-results-page.html"> SERP </a></li>
+                                  <li><a class="dropdown-item" href="getting-started-with-google-apps.html" class="purple">Using Google Apps</a></li>
+                                  <li><a class="dropdown-item" href="google-analytics-tracker.html" class="purple">Analytics Tracker</a></li>
+                                  <li><a class="dropdown-item" href="google-sheets.html" class="purple">Spreadsheets</a></li>
+                                  </ul>
+                              </li>
+
                             </div> <!-- navbar-collapse.// -->
                           </nav>
-                  <!-- navbar-.// -->
                 </ul>
               </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
@@ -154,20 +157,10 @@
           </div> -->
         </div>
       </div>
-      <!-- FAQ Boxes Begin -->
-      <div id="accordion" class="">
-        <div class="card get-started-expand">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn fix-the-faqs" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Get Started
-              </button>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <div class="form-outline">
 
+      <!-- FAQ Boxes Begin -->
+
+        <h2 class="heading mb-3 raleway" data-aos="fade-left"><strong>Get Started</strong></h2>
                 <form action="#" class="was-validated">
                   <div class="form-group">
                     <label for="uname">Name</label>
@@ -185,52 +178,14 @@
 
                   </div>
                   <div class="form-group">
-                    <label for="url">Current website or one you like</label>
-                    <input type="url" class="form-control" id="url" placeholder="https://" value="https://" name="url" required>
-
+                    <label for="message">Message</label>
+                    <textarea class="form-control bottom-border-only form-styles" rows="3" placeholder="Message" name="message" required></textarea>
                   </div>
-                  <!-- <div class="form-group form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-                      <div class="invalid-feedback">Check this checkbox to continue.</div>
-                    </label>
-                  </div> -->
+
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-                <!-- <form class="was-validated">
 
-                <label class="form-label" for="typeText">Name</label>
-                <input type="text" id="typeText" class="form-control" />
 
-                <label class="form-label" for="typeEmail">Email</label>
-                <input type="email" id="typeEmail" class="form-control" />
-
-                <label class="form-label" for="typePhone">Phone number input</label>
-                <input type="tel" id="typePhone" class="form-control" />
-
-                <label class="form-label" for="typeURL">URL of current website (or one you like)</label>
-                <input type="url" id="typeURL" class="form-control" />
-
-                <label class="form-label" for="textAreaExample">Message</label>
-                <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-
-                <button type="button" class="btn btn-outline-success">Send</button>
-              </form> -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="card make-faq-card-transparent">
-          <div class="card-header list-group" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn fix-the-faqs collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                What does the basic life support course teach?
-              </button>
-            </h5>
-          </div>
-        </div> -->
-      </div>
       <!-- FAQ Boxes Begin -->
           </div>
         </div>
@@ -271,6 +226,19 @@
                   <li><a href="google-analytics-tracker.html" target="_blank" class="purple">Analytics Tracker</a></li>
                   <li><a href="google-sheets.html" class="purple">Spreadsheets</a></li>
                 </ul>
+                <!--**======== Mobile Navbar  ===========**-->
+                <nav class="hide-on-big-screens position-relative text-right">
+                  <ul class="js-clone-nav">
+                    <a class="dropdown-item" href="index.html"> Home </a>
+                    <a class="dropdown-item" href="search-engine-optimization.html"> SEO </a>
+                    <a class="dropdown-item" href="ads.html"> Ads </a>
+                    <a class="dropdown-item" href="search-engine-results-page.html"> SERP </a>
+                    <a class="dropdown-item" href="getting-started-with-google-apps.html" class="purple">Using Google Apps</a>
+                    <a class="dropdown-item" href="google-analytics-tracker.html" class="purple">Analytics Tracker</a>
+                    <a class="dropdown-item" href="google-sheets.html" class="purple">Spreadsheets</a>
+                  </ul>
+                </nav>
+              <!--**======== Mobile Navbar  ===========**-->
                 <form name="submit-third-form-to-google-sheet" id="third-form" method="post">
                   <div class="d-flex mb-5 w-70-m-auto">
                     <input name="email" type="email" class="form-control rounded-0" placeholder="Your Email" required>
