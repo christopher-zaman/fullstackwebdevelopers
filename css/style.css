@@ -77,11 +77,23 @@ h1, h2, h3, h4, h5,
 .mint-cream{
   background-color: #f5fffa;
 }
+.dark-navy-blue{
+  background-color: #29006c;
+}
 .honey-dew{
   background-color: #f0fff0;
 }
 .floral-white{
   background-color: #fffaf0;
+}
+.lavender{
+  background-color: #faf7ff;
+}
+.light-orange{
+  background-color: #fff5ed;
+}
+.light-teal{
+  background-color: #dbf3ff;
 }
 .seo-bg{
   background-color: #fff;
@@ -103,14 +115,13 @@ h1, h2, h3, h4, h5,
     font-size: 0.5em;
 }
 .send-button{
-  background: none;
-  border: 1px solid #a6ef91;
-  font-size: 1.5em !important;
-  font-weight: 100 !important;
+  background: rgba(255,255,255,0.8);
+
 }
 .send-button:hover{
-    background-color: #a6ef91;
-    color: #fff;
+  border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+  background: none;
+  border-image-slice: 1;
 }
 /* .shadow {
    -moz-box-shadow:    inset 0 0 10px #000000;
@@ -122,7 +133,7 @@ h1, h2, h3, h4, h5,
   margin:auto;
 }
 .footer-links li > a:hover{
-  color: #7cd6b1;
+  color: #000;
 }
 .dark-purple{
   background-color: #1F0D3C;
@@ -134,15 +145,22 @@ h1, h2, h3, h4, h5,
   background: #fbfae6;
 }
 .form-styles{
-  border: 1px solid #a6ef91;
+  border: 1px solid #efefef;
   margin: 1px;
-  -moz-box-shadow:    inset 0 0 10px #a6ef91;
+  /* -moz-box-shadow:    inset 0 0 10px #a6ef91;
   -webkit-box-shadow: inset 0 0 10px #a6ef91;
-  box-shadow:         inset 0 0 10px #a6ef91;
+  box-shadow:         inset 0 0 10px #a6ef91; */
 }
 .raleway{
   font-family: 'Raleway', sans-serif;
   font-size: x-large;
+}
+.raleway-font-size{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+}
+.text-info-bright{
+  color: #24e1ff;
 }
 .margin-bottom-88px{
   margin-bottom:-88px;
@@ -154,7 +172,10 @@ h1, h2, h3, h4, h5,
   background-color: rgba(0,0,0,0.5);
 }
 .rgba-green-slight{
-  background-color: rgba(76, 175, 80, 0.1);
+  background-color: rgb(76, 175, 80);
+}
+.pivotal-beige{
+  background-color: #ede7dd;
 }
 .gradient-text {
   /* Fallback: Set a background color. */
@@ -297,25 +318,28 @@ h1, h2, h3, h4, h5,
 .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+    background: none;
+    border-image-slice: 1;
   }
 
     input[type="text"].form-control::-webkit-input-placeholder {
-      color: rgb(202, 131, 0);
+      color: #bcbce9;
       font-size: 1.5em;
       letter-spacing: 2px;
     }
     input[type="phone"].form-control::-webkit-input-placeholder {
-      color: rgb(202, 131, 0);
+      color: #bcbce9;
       font-size: 1.5em;
       letter-spacing: 2px;
     }
     input[type="email"].form-control::-webkit-input-placeholder {
-      color: rgb(202, 131, 0);
+      color: #bcbce9;
       font-size: 1.5em;
       letter-spacing: 2px;
     }
     textarea[name="message"].form-control::-webkit-input-placeholder {
-      color: rgb(202, 131, 0);
+      color: #bcbce9;
       font-size: 1.5em;
       letter-spacing: 2px;
     }
@@ -411,13 +435,15 @@ h1, h2, h3, h4, h5,
 
 .form-control {
   height: 50px;
-  border-radius: 0px;
-  background: none;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
   color: #6a4c98;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {
-    border-color: #a6ef91;
-    background: none; }
+    border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+    background: none;
+    border-image-slice: 1;
+   }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
@@ -1233,9 +1259,44 @@ h1, h2, h3, h4, h5,
   padding-bottom: 8rem !important; }
 
 .footer-section {
-  padding-top: 12rem !important; }
+  padding-top: 12rem !important;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+  border-image-slice: 1;
+ }
+ .current-theme-multi-color{
+    border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+    background: none;
+    border-image-slice: 1;
+ }
+   .current-theme-border-top{
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+  border-image-slice: 1;
+ }
+ .border-left-none{
+   border-left: none;
+ }
+ .border-right-none{
+   border-right: none;
+ }
+
+ .current-theme-border{
+  border-image: linear-gradient(90deg,#74d4f0,#4793f8,#bb53f2,#e653c9,#fa4a84);
+  background: none;
+  border-image-slice: 1;
+  border-image-width: 2px;
+  border-right: none;
+ }
 .bg-info-trans{
   background-color: rgb(24,162,184);
+}
+.current-theme-bg{
+  background-color: #e9e9fb;
+  color: #482a90;
+}
+.current-theme-color{
+  color: #482a90;
 }
 .email-device{
 font-size: smaller;
@@ -1243,6 +1304,8 @@ font-size: smaller;
 .show-on-mobile{
   display: none;
 }
+
+
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
   .email-device{
